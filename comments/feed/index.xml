@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comentarios en Master Face Med Spa	</title>
-	<atom:link href="http://masterfacemedspa.com/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>http://masterfacemedspa.com/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../index.html</link>
 	<description></description>
 	<lastBuildDate>Mon, 26 Jun 2023 15:55:59 +0000</lastBuildDate>
 	<sy:updatePeriod>

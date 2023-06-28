@@ -1,59 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://masterfacemedspa.com/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="./main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://masterfacemedspa.com/treatment/neurotoxin/</loc>
+		<loc>./treatment/neurotoxin/index.html</loc>
 		<lastmod>2023-06-14T21:47:14+00:00</lastmod>
 		<image:image>
-			<image:loc>http://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png</image:loc>
+			<image:loc>./wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>http://masterfacemedspa.com/treatment/fillers/</loc>
+		<loc>./treatment/fillers/index.html</loc>
 		<lastmod>2023-06-14T21:48:01+00:00</lastmod>
 		<image:image>
-			<image:loc>http://masterfacemedspa.com/wp-content/uploads/2023/06/Mask-Group-34.png</image:loc>
+			<image:loc>./wp-content/uploads/2023/06/Mask-Group-34.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>http://masterfacemedspa.com/treatment/juvederm/</loc>
+		<loc>./treatment/juvederm/index.html</loc>
 		<lastmod>2023-06-14T21:48:45+00:00</lastmod>
 		<image:image>
-			<image:loc>http://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-belleza-joven-sensual-piel-sana.png</image:loc>
+			<image:loc>./wp-content/uploads/2023/06/retrato-belleza-joven-sensual-piel-sana.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>http://masterfacemedspa.com/treatment/neurotoxin-2/</loc>
+		<loc>./treatment/neurotoxin-2/index.html</loc>
 		<lastmod>2023-06-26T15:03:03+00:00</lastmod>
 		<image:image>
-			<image:loc>http://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png</image:loc>
+			<image:loc>./wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>http://masterfacemedspa.com/treatment/neurotoxin-3/</loc>
+		<loc>./treatment/neurotoxin-3/index.html</loc>
 		<lastmod>2023-06-26T15:03:36+00:00</lastmod>
 		<image:image>
-			<image:loc>http://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png</image:loc>
+			<image:loc>./wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>http://masterfacemedspa.com/treatment/neurotoxin-4/</loc>
+		<loc>./treatment/neurotoxin-4/index.html</loc>
 		<lastmod>2023-06-26T15:04:10+00:00</lastmod>
 		<image:image>
-			<image:loc>http://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png</image:loc>
+			<image:loc>./wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>http://masterfacemedspa.com/treatment/neurotoxin-5/</loc>
+		<loc>./treatment/neurotoxin-5/index.html</loc>
 		<lastmod>2023-06-26T15:04:39+00:00</lastmod>
 		<image:image>
-			<image:loc>http://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png</image:loc>
+			<image:loc>./wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>http://masterfacemedspa.com/treatment/neurotoxin-6/</loc>
+		<loc>./treatment/neurotoxin-6/index.html</loc>
 		<lastmod>2023-06-26T15:54:29+00:00</lastmod>
 		<image:image>
-			<image:loc>http://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-belleza-joven-sensual-piel-sana.png</image:loc>
+			<image:loc>./wp-content/uploads/2023/06/retrato-belleza-joven-sensual-piel-sana.png</image:loc>
 		</image:image>
 	</url>
 </urlset>
