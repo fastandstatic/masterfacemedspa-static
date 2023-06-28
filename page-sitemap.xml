@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://masterfacemedspa.com/</loc>
-		<lastmod>2023-06-28T14:38:19+00:00</lastmod>
+		<lastmod>2023-06-28T15:17:37+00:00</lastmod>
 		<image:image>
 			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/12.webp</image:loc>
 		</image:image>
@@ -68,40 +68,6 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://masterfacemedspa.com/treatments/</loc>
-		<lastmod>2023-06-20T21:56:48+00:00</lastmod>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5487.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5487.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5487.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5487.png</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://masterfacemedspa.com/treatments-category/</loc>
 		<lastmod>2023-06-26T15:55:59+00:00</lastmod>
 		<image:image>
@@ -121,6 +87,40 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Path-5287.svg</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://masterfacemedspa.com/treatments/</loc>
+		<lastmod>2023-06-28T15:19:35+00:00</lastmod>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5487.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5487.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5487.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5487.png</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Group-5488.svg</image:loc>
 		</image:image>
 	</url>
 </urlset>
