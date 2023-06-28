@@ -1,27 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://masterfacemedspa.com/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="./main-sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
-		<loc>https://masterfacemedspa.com/post-sitemap.xml</loc>
+		<loc>./post-sitemap.xml</loc>
 		<lastmod>2023-06-20T15:32:21+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://masterfacemedspa.com/page-sitemap.xml</loc>
+		<loc>./page-sitemap.xml</loc>
 		<lastmod>2023-06-28T15:19:35+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://masterfacemedspa.com/before-after-sitemap.xml</loc>
+		<loc>./before-after-sitemap.xml</loc>
 		<lastmod>2023-06-06T19:05:40+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://masterfacemedspa.com/treatment-sitemap.xml</loc>
+		<loc>./treatment-sitemap.xml</loc>
 		<lastmod>2023-06-26T15:54:29+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://masterfacemedspa.com/category-sitemap.xml</loc>
+		<loc>./category-sitemap.xml</loc>
 		<lastmod>2023-06-20T15:32:21+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://masterfacemedspa.com/author-sitemap.xml</loc>
+		<loc>./author-sitemap.xml</loc>
 		<lastmod>2023-03-24T13:38:29+00:00</lastmod>
 	</sitemap>
 </sitemapindex>
