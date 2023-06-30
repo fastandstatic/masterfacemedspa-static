@@ -65,4 +65,14 @@
     -o-filter: brightness(100%) opacity(100%);
     -ms-filter: brightness(100%) opacity(100%);
     filter: brightness(100%) opacity(100%);
+}
+@media only screen and (max-width: 767px) {
+    /* For mobile phones: */
+    .menu-masterface .menu-master .plus-navigation-wrap .plus-vertical-side-toggle {
+    width: 200px;
+    }
+    .menu-masterface .menu-master .plus-navigation-wrap .plus-navigation-inner .navbar-collapse  .plus-navigation-menu ul.navbar-nav {
+         width: 350px;
+         height: 75vh;
+    }
 }/* End custom CSS */
