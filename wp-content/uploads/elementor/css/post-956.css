@@ -66,6 +66,23 @@
     -ms-filter: brightness(100%) opacity(100%);
     filter: brightness(100%) opacity(100%);
 }
+
+		.menu-masterface1 .menu-master .plus-navigation-wrap .plus-navigation-inner .navbar-collapse ul#menu-menu-principal > li ul.dropdown-menu {
+			height: 90vh;
+			margin-top: -73px;
+			min-width: 280px;
+			border-radius: 0px 20px 20px 0px;
+			background-color: #4545d040 !important;
+			-webkit-backdrop-filter: blur(30px);
+			backdrop-filter: blur(30px);
+			-webkit-filter: brightness(100%) opacity(100%);
+			-moz-filter: brightness(100%) opacity(100%);
+			-o-filter: brightness(100%) opacity(100%);
+			-ms-filter: brightness(100%) opacity(100%);
+			filter: brightness(100%) opacity(100%);
+			margin-left: 20px;
+		}
+
 @media only screen and (max-width: 767px) {
     /* For mobile phones: */
     .menu-masterface .menu-master .plus-navigation-wrap .plus-vertical-side-toggle {
