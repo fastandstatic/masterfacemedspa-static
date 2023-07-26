@@ -7,7 +7,7 @@
 	<title>junio 7, 2023 &#8211; Master Face Med Spa</title>
 <script>var theplus_ajax_url = "https://masterfacemedspa.com/wp-admin/admin-ajax.php";
 		var theplus_ajax_post_url = "https://masterfacemedspa.com/wp-admin/admin-post.php";
-		var theplus_nonce = "6dfbd8d47b";</script>
+		var theplus_nonce = "33467c9103";</script>
 <meta name="robots" content="max-image-preview:large">
 <link rel="alternate" type="application/rss+xml" title="Master Face Med Spa &raquo; Feed" href="https://masterfacemedspa.com/feed/">
 <link rel="alternate" type="application/rss+xml" title="Master Face Med Spa &raquo; Feed de los comentarios" href="https://masterfacemedspa.com/comments/feed/">
@@ -46,7 +46,7 @@ img.emoji {
 <link rel="stylesheet" id="swiper-css" href="https://masterfacemedspa.com/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6" media="all">
 <link rel="stylesheet" id="elementor-pro-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/custom-pro-frontend-lite.min.css?ver=1690302870" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/global.css?ver=1690302872" media="all">
-<link rel="stylesheet" id="elementor-post-956-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-956.css?ver=1690316969" media="all">
+<link rel="stylesheet" id="elementor-post-956-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-956.css?ver=1690382168" media="all">
 <link rel="stylesheet" id="elementor-post-829-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-829.css?ver=1690302878" media="all">
 <link rel="stylesheet" id="joinchat-css" href="https://masterfacemedspa.com/wp-content/plugins/creame-whatsapp-me/public/css/joinchat-btn.min.css?ver=5.0.6" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.2.2" media="all">
@@ -66,17 +66,20 @@ img.emoji {
 	display: flex !important;
 	flex-wrap: inherit;
 }	
-.swiper-button-prev{
+
+.post_slide .swiper-button-prev{
 	left:-100px
 }
-.swiper-button-next{
+
+.post_slide .swiper-button-next{
 	right:-100px
 }
 
 .post_slide .swiper-container {
   padding-bottom: 35px;
 }
-.swiper-container-horizontal > .swiper-pagination {
+
+.post_slide .swiper-container-horizontal > .swiper-pagination {
     position: absolute;
     bottom: 0;
 }
@@ -89,18 +92,34 @@ img.emoji {
     position: absolute;
     bottom: -45px !important; 
 }
-.post_slide .swiper-pagination-bullet-active {
+.post_slide .swiper-pagination-bullet-active,
+.section-benefits .treatments-sec .swiper-pagination-bullet-active {
     width: 12px;
     height: 12px;
 	background: #4545D0 !important;
 	border: 2px solid #4545D0;
 }
-.post_slide .swiper-pagination-bullet {
+.post_slide .swiper-pagination-bullet,
+.section-benefits .treatments-sec .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
 	background: #fff;
 	border: 2px solid #4545D0;
 	opacity: 1;
+	margin-left: 3px;
+    margin-right: 3px;
+}
+
+.section-benefits .treatments-sec footer.footer-slider {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-benefits .treatments-sec .swiper-pagination {
+    position: absolute;
+    bottom: 0 !important; 
 }</style>
 <!-- end Simple Custom CSS and JS -->
 <!-- start Simple Custom CSS and JS -->
@@ -115,7 +134,7 @@ img.emoji {
 			background: #4545D0 !important;
 		}
 		.joinchat {
-			bottom: 80px !important;
+			/*bottom: 80px !important; */
 		}
 		
 		/* MENU  */
@@ -165,24 +184,13 @@ img.emoji {
 			-ms-filter: brightness(100%) opacity(100%);
 			filter: brightness(100%) opacity(100%);
 		}
-		.menu-masterface1 .menu-master .plus-navigation-wrap .plus-navigation-inner .navbar-collapse .plus-navigation-menu.toggle-type-click ul.navbar-nav {
-			height: 90vh !important;
-				background-color: #4545d040 !important;
-			-webkit-backdrop-filter: blur(30px);
-			filter: blur(30px);
-			-webkit-filter: brightness(100%) opacity(100%);
-			-moz-filter: brightness(100%) opacity(100%);
-			-o-filter: brightness(100%) opacity(100%);
-			-ms-filter: brightness(100%) opacity(100%);
-			filter: brightness(100%) opacity(100%);
-		}
-		
-		.menu-masterface1 .menu-master .plus-navigation-wrap .plus-navigation-inner .navbar-collapse ul#menu-menu-principal > li ul.dropdown-menu {
+
+		.menu-masterface1 .menu-master .plus-navigation-wrap .plus-navigation-inner .navbar-collapse ul#menu-menu-principal > li.dropdown.open-menu ul.dropdown-menu {
 			height: 90vh;
 			margin-top: -73px;
 			min-width: 280px;
 			border-radius: 0px 20px 20px 0px;
-			background-color: #4545d040 !important;
+			background-color: #4545d0 !important;
 			-webkit-backdrop-filter: blur(30px);
 			backdrop-filter: blur(30px);
 			-webkit-filter: brightness(100%) opacity(100%);
@@ -190,9 +198,59 @@ img.emoji {
 			-o-filter: brightness(100%) opacity(100%);
 			-ms-filter: brightness(100%) opacity(100%);
 			filter: brightness(100%) opacity(100%);
+			box-shadow: none !important;
 			margin-left: 20px;
 		}
+		
+		
+		.section-before-after .slick-slide:before {
+			content: "";
+			background-image: url(https://masterfacemedspa.com/wp-content/uploads/2023/07/Path-5394.png);
+			position: relative;
+			display: inline-block;
+			background-size: 80px 80px;
+			width: 80px;
+			height: 80px;
+			top: 85px;
+			right: 35px;
+		}
 
+		span.star-ago {
+			content: "";
+			background-image: url(https://masterfacemedspa.com/wp-content/uploads/2023/07/estrella.png);
+			display: inline-flex;
+			background-size: 16px;
+			width: 80px;
+			height: 15px;
+			margin-top: 5px;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			align-content: center;
+		}
+		
+		span.text-ago {
+			color: blue;
+			font-weight: 400;
+			font-style: italic;
+			font-size: 11px;
+			display: inline-flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: flex-start;
+			align-content: center;
+			top: -3px;
+			position: relative;
+		}
+
+		.section-reviews-mface .premium-tabs .premium-tabs-nav ul.premium-tabs-nav-list a.carousel-arrow .fa-angle-right:before {
+			content: url(https://masterfacemedspa.com/wp-content/uploads/2023/07/Group-5558.svg) !important;
+		}
+		
+		.section-reviews-mface .premium-tabs .premium-tabs-nav ul.premium-tabs-nav-list a.carousel-arrow .fa-angle-left:before {
+			content: url(https://masterfacemedspa.com/wp-content/uploads/2023/07/Group-5557-1.svg) !important;
+		}
+		
 		@media only screen and (max-width: 767px) {
 			/* For mobile phones: */
 			.menu-masterface1 .menu-master .plus-navigation-wrap .plus-vertical-side-toggle {
@@ -532,7 +590,7 @@ img.emoji {
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-2dae0be menu-master elementor-widget elementor-widget-tp-navigation-menu" data-id="2dae0be" data-element_type="widget" data-widget_type="tp-navigation-menu.default">
 				<div class="elementor-widget-container">
-					<div class="plus-navigation-wrap text-left nav-menu64c04b27e82b32dae0be">
+					<div class="plus-navigation-wrap text-left nav-menu64c16b7b8e9292dae0be">
 			<div class="plus-navigation-inner menu-click main-menu-indicator-style-1 sub-menu-indicator-none plus-menu-style-1" data-menu_transition="style-1" data-mobile-menu-click="yes">
 				<div id="theplus-navigation-normal-menu" class="collapse navbar-collapse navbar-ex1-collapse">
 				
@@ -558,20 +616,20 @@ img.emoji {
 				</div>
 				
 															<div class="plus-mobile-nav-toggle navbar-header mobile-toggle">
-													<div class="mobile-plus-toggle-menu  plus-collapsed toggle-style-1" data-target="#plus-mobile-nav-toggle-nav-menu64c04b27e82b32dae0be">
+													<div class="mobile-plus-toggle-menu  plus-collapsed toggle-style-1" data-target="#plus-mobile-nav-toggle-nav-menu64c16b7b8e9292dae0be">
 																<ul class="toggle-lines">
 									<li class="toggle-line">
 									<li class="toggle-line">
 								</ul>
 															</div>
 						</div>
-															<div id="plus-mobile-nav-toggle-nav-menu64c04b27e82b32dae0be" class="plus-mobile-menu   collapse navbar-collapse navbar-ex1-collapse plus-mobile-menu-content ">
+															<div id="plus-mobile-nav-toggle-nav-menu64c16b7b8e9292dae0be" class="plus-mobile-menu   collapse navbar-collapse navbar-ex1-collapse plus-mobile-menu-content ">
 																	</div>
 								
 			</div>
 		</div>
 		 
-		<style>@media (min-width:992px){.plus-navigation-wrap.nav-menu64c04b27e82b32dae0be #theplus-navigation-normal-menu{display: block!important;}.plus-navigation-wrap.nav-menu64c04b27e82b32dae0be #plus-mobile-nav-toggle-nav-menu64c04b27e82b32dae0be.collapse.in{display:none;}}@media (max-width:991px){.plus-navigation-wrap.nav-menu64c04b27e82b32dae0be #theplus-navigation-normal-menu{display:none !important;}.plus-navigation-wrap.nav-menu64c04b27e82b32dae0be .plus-mobile-nav-toggle.mobile-toggle{display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: flex;-webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;align-items: center;-webkit-justify-content: flex-end;-moz-justify-content: flex-end;-ms-justify-content: flex-end;justify-content: flex-end;}.plus-navigation-wrap .plus-mobile-menu-content.collapse.swiper-container{display: block;}}</style>		</div>
+		<style>@media (min-width:992px){.plus-navigation-wrap.nav-menu64c16b7b8e9292dae0be #theplus-navigation-normal-menu{display: block!important;}.plus-navigation-wrap.nav-menu64c16b7b8e9292dae0be #plus-mobile-nav-toggle-nav-menu64c16b7b8e9292dae0be.collapse.in{display:none;}}@media (max-width:991px){.plus-navigation-wrap.nav-menu64c16b7b8e9292dae0be #theplus-navigation-normal-menu{display:none !important;}.plus-navigation-wrap.nav-menu64c16b7b8e9292dae0be .plus-mobile-nav-toggle.mobile-toggle{display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: flex;-webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;align-items: center;-webkit-justify-content: flex-end;-moz-justify-content: flex-end;-ms-justify-content: flex-end;justify-content: flex-end;}.plus-navigation-wrap .plus-mobile-menu-content.collapse.swiper-container{display: block;}}</style>		</div>
 				</div>
 					</div>
 				</div>
@@ -588,6 +646,26 @@ img.emoji {
 				</div>
 		<div class="elementor-element elementor-element-cb646b7 e-flex e-con-boxed e-con" data-id="cb646b7" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-af65eef elementor-search-form--skin-full_screen elementor-widget elementor-widget-search-form" data-id="af65eef" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://masterfacemedspa.com/wp-content/plugins/elementor-pro/assets/css/widget-theme-elements.min.css">		<form class="elementor-search-form" action="https://masterfacemedspa.fastandstatic.com" method="get" role="search">
+									<div class="elementor-search-form__toggle" tabindex="0" role="button">
+				<i aria-hidden="true" class="fas fa-search"></i>				<span class="elementor-screen-only">Search</span>
+			</div>
+						<div class="elementor-search-form__container">
+				<label class="elementor-screen-only" for="elementor-search-form-af65eef">Search</label>
+
+				
+				<input id="elementor-search-form-af65eef" placeholder="Search..." class="elementor-search-form__input" type="search" name="s" value="">
+				
+				
+								<div class="dialog-lightbox-close-button dialog-close-button" role="button" tabindex="0">
+					<i aria-hidden="true" class="eicon-close"></i>					<span class="elementor-screen-only">Close this search box.</span>
+				</div>
+							</div>
+		</form>
+				</div>
+				</div>
 				<div class="elementor-element elementor-element-a6d812f elementor-widget elementor-widget-button" data-id="a6d812f" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
@@ -620,7 +698,7 @@ img.emoji {
 		<div class="elementor-element elementor-element-2db1bcc e-con-full e-flex e-con" data-id="2db1bcc" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-6bbb26d menu-master elementor-widget elementor-widget-tp-navigation-menu" data-id="6bbb26d" data-element_type="widget" data-widget_type="tp-navigation-menu.default">
 				<div class="elementor-widget-container">
-					<div class="plus-navigation-wrap text-left nav-menu64c04b281edaf6bbb26d">
+					<div class="plus-navigation-wrap text-left nav-menu64c16b7bb97c56bbb26d">
 			<div class="plus-navigation-inner menu-click main-menu-indicator-style-1 sub-menu-indicator-none plus-menu-style-1" data-menu_transition="style-1" data-mobile-menu-click="no">
 				<div id="theplus-navigation-normal-menu" class="collapse navbar-collapse navbar-ex1-collapse">
 				
@@ -649,7 +727,7 @@ img.emoji {
 			</div>
 		</div>
 		 
-		<style>.plus-navigation-wrap.nav-menu64c04b281edaf6bbb26d #theplus-navigation-normal-menu{display: block!important;}</style>		</div>
+		<style>.plus-navigation-wrap.nav-menu64c16b7bb97c56bbb26d #theplus-navigation-normal-menu{display: block!important;}</style>		</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-05c91a4 e-con-full e-flex e-con" data-id="05c91a4" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
@@ -663,7 +741,7 @@ img.emoji {
 		<div class="elementor-element elementor-element-0334996 e-con-full e-flex e-con" data-id="0334996" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-bec9221 elementor-search-form--skin-full_screen elementor-widget elementor-widget-search-form" data-id="bec9221" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
 				<div class="elementor-widget-container">
-			<link rel="stylesheet" href="https://masterfacemedspa.com/wp-content/plugins/elementor-pro/assets/css/widget-theme-elements.min.css">		<form class="elementor-search-form" action="https://masterfacemedspa.fastandstatic.com" method="get" role="search">
+					<form class="elementor-search-form" action="https://masterfacemedspa.fastandstatic.com" method="get" role="search">
 									<div class="elementor-search-form__toggle" tabindex="0" role="button">
 				<i aria-hidden="true" class="fas fa-search"></i>				<span class="elementor-screen-only">Search</span>
 			</div>
@@ -931,7 +1009,7 @@ img.emoji {
 <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 </script>
-<script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/masterfacemedspa.com\/wp-admin\/admin-ajax.php","nonce":"e45b648823","urls":{"assets":"https:\/\/masterfacemedspa.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/masterfacemedspa.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"es_ES","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/masterfacemedspa.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};</script>
+<script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/masterfacemedspa.com\/wp-admin\/admin-ajax.php","nonce":"7e8b808606","urls":{"assets":"https:\/\/masterfacemedspa.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/masterfacemedspa.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"es_ES","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/masterfacemedspa.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};</script>
 <script src="https://masterfacemedspa.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.14.1" id="elementor-pro-frontend-js"></script>
 <script src="https://masterfacemedspa.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
 <script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Pinear","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir vídeo","previous":"Anterior","next":"Siguiente","close":"Cerrar","a11yCarouselWrapperAriaLabel":"Carrusel | Scroll horizontal: Flecha izquierda y derecha","a11yCarouselPrevSlideMessage":"Diapositiva anterior","a11yCarouselNextSlideMessage":"Diapositiva siguiente","a11yCarouselFirstSlideMessage":"Esta es la primera diapositiva","a11yCarouselLastSlideMessage":"Esta es la última diapositiva","a11yCarouselPaginationBulletMessage":"Ir a la diapositiva"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Móvil vertical","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Móvil horizontal","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tableta vertical","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tableta horizontal","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portátil","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":true}}},"version":"3.14.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"editor_v2":true,"landing-pages":true,"page-transitions":true,"notes":true,"loop":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/masterfacemedspa.com\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop","viewport_widescreen"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":0,"title":"junio 7, 2023 – Master Face Med Spa","excerpt":""}};</script>
@@ -942,13 +1020,14 @@ wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 <script>
 //SLIDER PARA POST EN BLOG
 jQuery(document).ready(function( $ ){
-      jQuery(".post_slide .elementor-widget-container").addClass("swiper");
+      jQuery(".post_slide .elementor-widget-posts .elementor-widget-container").addClass("swiper");
+	jQuery(".post_slide .elementor-widget-posts .elementor-widget-container").addClass("swiper-post-mface");
   jQuery(".post_slide .elementor-posts-container").addClass("swiper-wrapper");
     jQuery(".post_slide .elementor-post").addClass("swiper-slide");
-	jQuery('.swiper').append('<footer class="footer-slider"><div class="swiper-pagination" slot="pagination"><\/div><\/footer>');
+	jQuery('.swiper-post-mface').append('<footer class="footer-slider"><div class="swiper-pagination" slot="pagination"><\/div><\/footer>');
 //jQuery('.swiper').after('<div class="swiper-button-prev"><\/div><div class="swiper-button-next"><\/div>'); 
   
-    var swiper = new Swiper('.swiper', {
+    var swiper = new Swiper('.swiper-post-mface', {
       	direction: "horizontal",
       	//slidesPerView: 3,
       	spaceBetween: 30,

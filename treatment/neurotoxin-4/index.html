@@ -7,7 +7,7 @@
 	<title>Neurotoxin 4 &#8211; Master Face Med Spa</title>
 <script>var theplus_ajax_url = "https://masterfacemedspa.com/wp-admin/admin-ajax.php";
 		var theplus_ajax_post_url = "https://masterfacemedspa.com/wp-admin/admin-post.php";
-		var theplus_nonce = "6dfbd8d47b";</script>
+		var theplus_nonce = "33467c9103";</script>
 <meta name="robots" content="max-image-preview:large">
 <link rel="alternate" type="application/rss+xml" title="Master Face Med Spa &raquo; Feed" href="https://masterfacemedspa.com/feed/">
 <link rel="alternate" type="application/rss+xml" title="Master Face Med Spa &raquo; Feed de los comentarios" href="https://masterfacemedspa.com/comments/feed/">
@@ -46,7 +46,7 @@ img.emoji {
 <link rel="stylesheet" id="swiper-css" href="https://masterfacemedspa.com/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css?ver=5.3.6" media="all">
 <link rel="stylesheet" id="elementor-pro-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/custom-pro-frontend-lite.min.css?ver=1690302870" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/global.css?ver=1690302872" media="all">
-<link rel="stylesheet" id="elementor-post-956-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-956.css?ver=1690316969" media="all">
+<link rel="stylesheet" id="elementor-post-956-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-956.css?ver=1690382168" media="all">
 <link rel="stylesheet" id="elementor-post-829-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-829.css?ver=1690302878" media="all">
 <link rel="stylesheet" id="elementor-post-2020-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-2020.css?ver=1690314613" media="all">
 <link rel="stylesheet" id="joinchat-css" href="https://masterfacemedspa.com/wp-content/plugins/creame-whatsapp-me/public/css/joinchat-btn.min.css?ver=5.0.6" media="all">
@@ -72,17 +72,20 @@ img.emoji {
 	display: flex !important;
 	flex-wrap: inherit;
 }	
-.swiper-button-prev{
+
+.post_slide .swiper-button-prev{
 	left:-100px
 }
-.swiper-button-next{
+
+.post_slide .swiper-button-next{
 	right:-100px
 }
 
 .post_slide .swiper-container {
   padding-bottom: 35px;
 }
-.swiper-container-horizontal > .swiper-pagination {
+
+.post_slide .swiper-container-horizontal > .swiper-pagination {
     position: absolute;
     bottom: 0;
 }
@@ -95,18 +98,34 @@ img.emoji {
     position: absolute;
     bottom: -45px !important; 
 }
-.post_slide .swiper-pagination-bullet-active {
+.post_slide .swiper-pagination-bullet-active,
+.section-benefits .treatments-sec .swiper-pagination-bullet-active {
     width: 12px;
     height: 12px;
 	background: #4545D0 !important;
 	border: 2px solid #4545D0;
 }
-.post_slide .swiper-pagination-bullet {
+.post_slide .swiper-pagination-bullet,
+.section-benefits .treatments-sec .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
 	background: #fff;
 	border: 2px solid #4545D0;
 	opacity: 1;
+	margin-left: 3px;
+    margin-right: 3px;
+}
+
+.section-benefits .treatments-sec footer.footer-slider {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-benefits .treatments-sec .swiper-pagination {
+    position: absolute;
+    bottom: 0 !important; 
 }</style>
 <!-- end Simple Custom CSS and JS -->
 <!-- start Simple Custom CSS and JS -->
@@ -121,7 +140,7 @@ img.emoji {
 			background: #4545D0 !important;
 		}
 		.joinchat {
-			bottom: 80px !important;
+			/*bottom: 80px !important; */
 		}
 		
 		/* MENU  */
@@ -171,24 +190,13 @@ img.emoji {
 			-ms-filter: brightness(100%) opacity(100%);
 			filter: brightness(100%) opacity(100%);
 		}
-		.menu-masterface1 .menu-master .plus-navigation-wrap .plus-navigation-inner .navbar-collapse .plus-navigation-menu.toggle-type-click ul.navbar-nav {
-			height: 90vh !important;
-				background-color: #4545d040 !important;
-			-webkit-backdrop-filter: blur(30px);
-			filter: blur(30px);
-			-webkit-filter: brightness(100%) opacity(100%);
-			-moz-filter: brightness(100%) opacity(100%);
-			-o-filter: brightness(100%) opacity(100%);
-			-ms-filter: brightness(100%) opacity(100%);
-			filter: brightness(100%) opacity(100%);
-		}
-		
-		.menu-masterface1 .menu-master .plus-navigation-wrap .plus-navigation-inner .navbar-collapse ul#menu-menu-principal > li ul.dropdown-menu {
+
+		.menu-masterface1 .menu-master .plus-navigation-wrap .plus-navigation-inner .navbar-collapse ul#menu-menu-principal > li.dropdown.open-menu ul.dropdown-menu {
 			height: 90vh;
 			margin-top: -73px;
 			min-width: 280px;
 			border-radius: 0px 20px 20px 0px;
-			background-color: #4545d040 !important;
+			background-color: #4545d0 !important;
 			-webkit-backdrop-filter: blur(30px);
 			backdrop-filter: blur(30px);
 			-webkit-filter: brightness(100%) opacity(100%);
@@ -196,9 +204,59 @@ img.emoji {
 			-o-filter: brightness(100%) opacity(100%);
 			-ms-filter: brightness(100%) opacity(100%);
 			filter: brightness(100%) opacity(100%);
+			box-shadow: none !important;
 			margin-left: 20px;
 		}
+		
+		
+		.section-before-after .slick-slide:before {
+			content: "";
+			background-image: url(https://masterfacemedspa.com/wp-content/uploads/2023/07/Path-5394.png);
+			position: relative;
+			display: inline-block;
+			background-size: 80px 80px;
+			width: 80px;
+			height: 80px;
+			top: 85px;
+			right: 35px;
+		}
 
+		span.star-ago {
+			content: "";
+			background-image: url(https://masterfacemedspa.com/wp-content/uploads/2023/07/estrella.png);
+			display: inline-flex;
+			background-size: 16px;
+			width: 80px;
+			height: 15px;
+			margin-top: 5px;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			align-content: center;
+		}
+		
+		span.text-ago {
+			color: blue;
+			font-weight: 400;
+			font-style: italic;
+			font-size: 11px;
+			display: inline-flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: flex-start;
+			align-content: center;
+			top: -3px;
+			position: relative;
+		}
+
+		.section-reviews-mface .premium-tabs .premium-tabs-nav ul.premium-tabs-nav-list a.carousel-arrow .fa-angle-right:before {
+			content: url(https://masterfacemedspa.com/wp-content/uploads/2023/07/Group-5558.svg) !important;
+		}
+		
+		.section-reviews-mface .premium-tabs .premium-tabs-nav ul.premium-tabs-nav-list a.carousel-arrow .fa-angle-left:before {
+			content: url(https://masterfacemedspa.com/wp-content/uploads/2023/07/Group-5557-1.svg) !important;
+		}
+		
 		@media only screen and (max-width: 767px) {
 			/* For mobile phones: */
 			.menu-masterface1 .menu-master .plus-navigation-wrap .plus-vertical-side-toggle {
@@ -538,7 +596,7 @@ img.emoji {
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-2dae0be menu-master elementor-widget elementor-widget-tp-navigation-menu" data-id="2dae0be" data-element_type="widget" data-widget_type="tp-navigation-menu.default">
 				<div class="elementor-widget-container">
-					<div class="plus-navigation-wrap text-left nav-menu64c04ae47567e2dae0be">
+					<div class="plus-navigation-wrap text-left nav-menu64c16b4ee9dc42dae0be">
 			<div class="plus-navigation-inner menu-click main-menu-indicator-style-1 sub-menu-indicator-none plus-menu-style-1" data-menu_transition="style-1" data-mobile-menu-click="yes">
 				<div id="theplus-navigation-normal-menu" class="collapse navbar-collapse navbar-ex1-collapse">
 				
@@ -564,20 +622,20 @@ img.emoji {
 				</div>
 				
 															<div class="plus-mobile-nav-toggle navbar-header mobile-toggle">
-													<div class="mobile-plus-toggle-menu  plus-collapsed toggle-style-1" data-target="#plus-mobile-nav-toggle-nav-menu64c04ae47567e2dae0be">
+													<div class="mobile-plus-toggle-menu  plus-collapsed toggle-style-1" data-target="#plus-mobile-nav-toggle-nav-menu64c16b4ee9dc42dae0be">
 																<ul class="toggle-lines">
 									<li class="toggle-line">
 									<li class="toggle-line">
 								</ul>
 															</div>
 						</div>
-															<div id="plus-mobile-nav-toggle-nav-menu64c04ae47567e2dae0be" class="plus-mobile-menu   collapse navbar-collapse navbar-ex1-collapse plus-mobile-menu-content ">
+															<div id="plus-mobile-nav-toggle-nav-menu64c16b4ee9dc42dae0be" class="plus-mobile-menu   collapse navbar-collapse navbar-ex1-collapse plus-mobile-menu-content ">
 																	</div>
 								
 			</div>
 		</div>
 		 
-		<style>@media (min-width:992px){.plus-navigation-wrap.nav-menu64c04ae47567e2dae0be #theplus-navigation-normal-menu{display: block!important;}.plus-navigation-wrap.nav-menu64c04ae47567e2dae0be #plus-mobile-nav-toggle-nav-menu64c04ae47567e2dae0be.collapse.in{display:none;}}@media (max-width:991px){.plus-navigation-wrap.nav-menu64c04ae47567e2dae0be #theplus-navigation-normal-menu{display:none !important;}.plus-navigation-wrap.nav-menu64c04ae47567e2dae0be .plus-mobile-nav-toggle.mobile-toggle{display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: flex;-webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;align-items: center;-webkit-justify-content: flex-end;-moz-justify-content: flex-end;-ms-justify-content: flex-end;justify-content: flex-end;}.plus-navigation-wrap .plus-mobile-menu-content.collapse.swiper-container{display: block;}}</style>		</div>
+		<style>@media (min-width:992px){.plus-navigation-wrap.nav-menu64c16b4ee9dc42dae0be #theplus-navigation-normal-menu{display: block!important;}.plus-navigation-wrap.nav-menu64c16b4ee9dc42dae0be #plus-mobile-nav-toggle-nav-menu64c16b4ee9dc42dae0be.collapse.in{display:none;}}@media (max-width:991px){.plus-navigation-wrap.nav-menu64c16b4ee9dc42dae0be #theplus-navigation-normal-menu{display:none !important;}.plus-navigation-wrap.nav-menu64c16b4ee9dc42dae0be .plus-mobile-nav-toggle.mobile-toggle{display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: flex;-webkit-align-items: center;-moz-align-items: center;-ms-align-items: center;align-items: center;-webkit-justify-content: flex-end;-moz-justify-content: flex-end;-ms-justify-content: flex-end;justify-content: flex-end;}.plus-navigation-wrap .plus-mobile-menu-content.collapse.swiper-container{display: block;}}</style>		</div>
 				</div>
 					</div>
 				</div>
@@ -594,6 +652,26 @@ img.emoji {
 				</div>
 		<div class="elementor-element elementor-element-cb646b7 e-flex e-con-boxed e-con" data-id="cb646b7" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-af65eef elementor-search-form--skin-full_screen elementor-widget elementor-widget-search-form" data-id="af65eef" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+			<link rel="stylesheet" href="https://masterfacemedspa.com/wp-content/plugins/elementor-pro/assets/css/widget-theme-elements.min.css">		<form class="elementor-search-form" action="https://masterfacemedspa.fastandstatic.com" method="get" role="search">
+									<div class="elementor-search-form__toggle" tabindex="0" role="button">
+				<i aria-hidden="true" class="fas fa-search"></i>				<span class="elementor-screen-only">Search</span>
+			</div>
+						<div class="elementor-search-form__container">
+				<label class="elementor-screen-only" for="elementor-search-form-af65eef">Search</label>
+
+				
+				<input id="elementor-search-form-af65eef" placeholder="Search..." class="elementor-search-form__input" type="search" name="s" value="">
+				
+				
+								<div class="dialog-lightbox-close-button dialog-close-button" role="button" tabindex="0">
+					<i aria-hidden="true" class="eicon-close"></i>					<span class="elementor-screen-only">Close this search box.</span>
+				</div>
+							</div>
+		</form>
+				</div>
+				</div>
 				<div class="elementor-element elementor-element-a6d812f elementor-widget elementor-widget-button" data-id="a6d812f" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
@@ -626,7 +704,7 @@ img.emoji {
 		<div class="elementor-element elementor-element-2db1bcc e-con-full e-flex e-con" data-id="2db1bcc" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-6bbb26d menu-master elementor-widget elementor-widget-tp-navigation-menu" data-id="6bbb26d" data-element_type="widget" data-widget_type="tp-navigation-menu.default">
 				<div class="elementor-widget-container">
-					<div class="plus-navigation-wrap text-left nav-menu64c04ae4eaeb46bbb26d">
+					<div class="plus-navigation-wrap text-left nav-menu64c16b4f216306bbb26d">
 			<div class="plus-navigation-inner menu-click main-menu-indicator-style-1 sub-menu-indicator-none plus-menu-style-1" data-menu_transition="style-1" data-mobile-menu-click="no">
 				<div id="theplus-navigation-normal-menu" class="collapse navbar-collapse navbar-ex1-collapse">
 				
@@ -655,7 +733,7 @@ img.emoji {
 			</div>
 		</div>
 		 
-		<style>.plus-navigation-wrap.nav-menu64c04ae4eaeb46bbb26d #theplus-navigation-normal-menu{display: block!important;}</style>		</div>
+		<style>.plus-navigation-wrap.nav-menu64c16b4f216306bbb26d #theplus-navigation-normal-menu{display: block!important;}</style>		</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-05c91a4 e-con-full e-flex e-con" data-id="05c91a4" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
@@ -669,7 +747,7 @@ img.emoji {
 		<div class="elementor-element elementor-element-0334996 e-con-full e-flex e-con" data-id="0334996" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-bec9221 elementor-search-form--skin-full_screen elementor-widget elementor-widget-search-form" data-id="bec9221" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;full_screen&quot;}" data-widget_type="search-form.default">
 				<div class="elementor-widget-container">
-			<link rel="stylesheet" href="https://masterfacemedspa.com/wp-content/plugins/elementor-pro/assets/css/widget-theme-elements.min.css">		<form class="elementor-search-form" action="https://masterfacemedspa.fastandstatic.com" method="get" role="search">
+					<form class="elementor-search-form" action="https://masterfacemedspa.fastandstatic.com" method="get" role="search">
 									<div class="elementor-search-form__toggle" tabindex="0" role="button">
 				<i aria-hidden="true" class="fas fa-search"></i>				<span class="elementor-screen-only">Search</span>
 			</div>
@@ -897,7 +975,7 @@ ments</h2>		</div>
 				<div class="elementor-element elementor-element-2a62b57 elementor-widget elementor-widget-tp-carousel-anything" data-id="2a62b57" data-element_type="widget" data-widget_type="tp-carousel-anything.default">
 				<div class="elementor-widget-container">
 			 
-		<div id="carousel64c04ae5da1e6" class="theplus-carousel-anything-wrapper list-carousel-slick   overlay-content-dots carousel64c04ae5da1e6 " data-id="carousel64c04ae5da1e6" data-connection="" data-slider_direction="false" data-slide_speed="800" data-slide_fade_inout="false" data-slider_desktop_column="2" data-steps_slide="1" data-slider_draggable="true" data-multi_drag="false" data-slider_infinite="true" data-slider_pause_hover="false" data-slider_adaptive_height="false" data-slider_animation="ease" data-slider_autoplay="true" data-autoplay_speed="3000" data-slider_tablet_column="2" data-tablet_steps_slide="1" data-slider_responsive_tablet="no" data-slider_mobile_column="1" data-mobile_steps_slide="2" data-slider_responsive_mobile="no" data-slider_dots="true" data-slider_dots_style="slick-dots style-2" data-slider_arrows="false" data-slider_arrows_style="style-1" data-arrows_position="top-right" data-arrow_bg_color="#c44d48" data-arrow_icon_color="#fff" data-arrow_hover_bg_color="#fff" data-arrow_hover_icon_color="#c44d48" data-slider_center_mode="false" data-center_padding="0" data-scale_center_slide="1" data-scale_normal_slide="0.8" data-opacity_normal_slide="0.7" data-slider_rows="1">
+		<div id="carousel64c16b4fa78cf" class="theplus-carousel-anything-wrapper list-carousel-slick   overlay-content-dots carousel64c16b4fa78cf " data-id="carousel64c16b4fa78cf" data-connection="" data-slider_direction="false" data-slide_speed="800" data-slide_fade_inout="false" data-slider_desktop_column="2" data-steps_slide="1" data-slider_draggable="true" data-multi_drag="false" data-slider_infinite="true" data-slider_pause_hover="false" data-slider_adaptive_height="false" data-slider_animation="ease" data-slider_autoplay="true" data-autoplay_speed="3000" data-slider_tablet_column="2" data-tablet_steps_slide="1" data-slider_responsive_tablet="no" data-slider_mobile_column="1" data-mobile_steps_slide="2" data-slider_responsive_mobile="no" data-slider_dots="true" data-slider_dots_style="slick-dots style-2" data-slider_arrows="false" data-slider_arrows_style="style-1" data-arrows_position="top-right" data-arrow_bg_color="#c44d48" data-arrow_icon_color="#fff" data-arrow_hover_bg_color="#fff" data-arrow_hover_icon_color="#c44d48" data-slider_center_mode="false" data-center_padding="0" data-scale_center_slide="1" data-scale_normal_slide="0.8" data-opacity_normal_slide="0.7" data-slider_rows="1">
 			<div class="plus-carousel-inner post-inner-loop">
 								<div id="slide-content-4441" class="plus-slide-content grid-item ">
 						<div class="slide-content-inner">
@@ -1240,16 +1318,20 @@ ments</h2>		</div>
     .treatments:before {
         height: 250px; 
     }
-}.elementor-1381 .elementor-element.elementor-element-1bd8f8f{--display:flex;--min-height:0px;--justify-content:center;--gap:0px;--background-transition:0.3s;--margin-top:0px;--margin-right:0px;--margin-bottom:0px;--margin-left:0px;--padding-top:0px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;}.elementor-1381 .elementor-element.elementor-element-1531907{--display:flex;--min-height:340px;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--justify-content:space-between;--align-items:center;--gap:0px;--background-transition:0.3s;--overlay-opacity:1;--border-radius:147px 147px 147px 147px;--border-top-left-radius:147px;--border-top-right-radius:147px;--border-bottom-right-radius:147px;--border-bottom-left-radius:147px;--margin-top:0px;--margin-right:0px;--margin-bottom:0px;--margin-left:0px;--padding-top:0px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;}.elementor-1381 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .elementor-1381 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-position:center center;background-repeat:no-repeat;background-size:cover;}.elementor-1381 .elementor-element.elementor-element-1531907::before, .elementor-1381 .elementor-element.elementor-element-1531907 > .elementor-background-video-container::before, .elementor-1381 .elementor-element.elementor-element-1531907 > .e-con-inner > .elementor-background-video-container::before, .elementor-1381 .elementor-element.elementor-element-1531907 > .elementor-background-slideshow::before, .elementor-1381 .elementor-element.elementor-element-1531907 > .e-con-inner > .elementor-background-slideshow::before, .elementor-1381 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer::before{--background-overlay:'';background-color:transparent;background-image:linear-gradient(180deg, #00000000 50%, #5F9AAC 100%);}.elementor-1381 .elementor-element.elementor-element-1531907, .elementor-1381 .elementor-element.elementor-element-1531907::before{--border-transition:0.3s;}.elementor-1381 .elementor-element.elementor-element-39c252e{--display:flex;--gap:3px;--background-transition:0.3s;--margin-top:0px;--margin-right:0px;--margin-bottom:0px;--margin-left:0px;--padding-top:40px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;}.elementor-1381 .elementor-element.elementor-element-1ce2241{text-align:center;}.elementor-1381 .elementor-element.elementor-element-1ce2241 .elementor-heading-title{color:var( --e-global-color-text );font-family:"Poppins", Sans-serif;font-size:17px;font-weight:400;}.elementor-1381 .elementor-element.elementor-element-46a1aa7{text-align:center;}.elementor-1381 .elementor-element.elementor-element-46a1aa7 .elementor-heading-title{color:var( --e-global-color-text );font-family:"Poppins", Sans-serif;font-size:12px;font-weight:400;}.elementor-1381 .elementor-element.elementor-element-0d25ba1{--display:flex;--justify-content:center;--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--background-transition:0.3s;--margin-top:0px;--margin-right:0px;--margin-bottom:0px;--margin-left:0px;--padding-top:0px;--padding-right:0px;--padding-bottom:30px;--padding-left:0px;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b .elementor-icon-wrapper{text-align:center;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b.elementor-view-stacked .elementor-icon{background-color:#2727271A;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b.elementor-view-framed .elementor-icon, .elementor-1381 .elementor-element.elementor-element-2dbcd0b.elementor-view-default .elementor-icon{color:#2727271A;border-color:#2727271A;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b.elementor-view-framed .elementor-icon, .elementor-1381 .elementor-element.elementor-element-2dbcd0b.elementor-view-default .elementor-icon svg{fill:#2727271A;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b .elementor-icon{font-size:30px;padding:14px;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b .elementor-icon svg{height:30px;}@media(max-width:1024px){.elementor-1381 .elementor-element.elementor-element-1bd8f8f{--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-1381 .elementor-element.elementor-element-1531907{--min-height:250px;}}@media(min-width:768px){.elementor-1381 .elementor-element.elementor-element-1bd8f8f{--width:200px;}}@media(max-width:1024px) and (min-width:768px){.elementor-1381 .elementor-element.elementor-element-1bd8f8f{--width:38%;}}@media(max-width:767px){.elementor-1381 .elementor-element.elementor-element-1bd8f8f{--width:150px;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;}.elementor-1381 .elementor-element.elementor-element-1531907{--min-height:250px;}.elementor-1381 .elementor-element.elementor-element-1ce2241 .elementor-heading-title{font-size:12px;}.elementor-1381 .elementor-element.elementor-element-1ce2241 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-1381 .elementor-element.elementor-element-46a1aa7 .elementor-heading-title{font-size:9px;}.elementor-1381 .elementor-element.elementor-element-46a1aa7 > .elementor-widget-container{margin:0px 0px -6px 0px;padding:0px 0px 0px 0px;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b .elementor-icon{font-size:30px;border-radius:50% 50% 50% 50%;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b .elementor-icon svg{height:30px;}}/* Start custom CSS for icon, class: .elementor-element-2dbcd0b */.elementor-1381 .elementor-element.elementor-element-2dbcd0b {
+}.elementor-1381 .elementor-element.elementor-element-1bd8f8f{--display:flex;--min-height:0px;--justify-content:center;--gap:0px;--background-transition:0.3s;--margin-top:0px;--margin-right:0px;--margin-bottom:0px;--margin-left:0px;--padding-top:0px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;}.elementor-1381 .elementor-element.elementor-element-1531907{--display:flex;--min-height:340px;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--justify-content:flex-start;--align-items:center;--gap:0px;--background-transition:0.3s;--overlay-opacity:1;--border-radius:147px 147px 147px 147px;--border-top-left-radius:147px;--border-top-right-radius:147px;--border-bottom-right-radius:147px;--border-bottom-left-radius:147px;--margin-top:0px;--margin-right:0px;--margin-bottom:0px;--margin-left:0px;--padding-top:40px;--padding-right:0px;--padding-bottom:0px;--padding-left:0px;}.elementor-1381 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .elementor-1381 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-position:center center;background-repeat:no-repeat;background-size:cover;}.elementor-1381 .elementor-element.elementor-element-1531907::before, .elementor-1381 .elementor-element.elementor-element-1531907 > .elementor-background-video-container::before, .elementor-1381 .elementor-element.elementor-element-1531907 > .e-con-inner > .elementor-background-video-container::before, .elementor-1381 .elementor-element.elementor-element-1531907 > .elementor-background-slideshow::before, .elementor-1381 .elementor-element.elementor-element-1531907 > .e-con-inner > .elementor-background-slideshow::before, .elementor-1381 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer::before{--background-overlay:'';background-color:transparent;background-image:linear-gradient(180deg, #00000000 50%, #5F9AAC 100%);}.elementor-1381 .elementor-element.elementor-element-1531907, .elementor-1381 .elementor-element.elementor-element-1531907::before{--border-transition:0.3s;}.elementor-1381 .elementor-element.elementor-element-1ce2241{text-align:center;}.elementor-1381 .elementor-element.elementor-element-1ce2241 .elementor-heading-title{color:var( --e-global-color-text );font-family:"Poppins", Sans-serif;font-size:17px;font-weight:400;}.elementor-1381 .elementor-element.elementor-element-46a1aa7{text-align:center;}.elementor-1381 .elementor-element.elementor-element-46a1aa7 .elementor-heading-title{color:var( --e-global-color-text );font-family:"Poppins", Sans-serif;font-size:12px;font-weight:400;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b .elementor-icon-wrapper{text-align:center;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b.elementor-view-stacked .elementor-icon{background-color:#2727271A;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b.elementor-view-framed .elementor-icon, .elementor-1381 .elementor-element.elementor-element-2dbcd0b.elementor-view-default .elementor-icon{color:#2727271A;border-color:#2727271A;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b.elementor-view-framed .elementor-icon, .elementor-1381 .elementor-element.elementor-element-2dbcd0b.elementor-view-default .elementor-icon svg{fill:#2727271A;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b .elementor-icon{font-size:30px;padding:14px;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b .elementor-icon svg{height:30px;}body:not(.rtl) .elementor-1381 .elementor-element.elementor-element-2dbcd0b{right:69.4px;}body.rtl .elementor-1381 .elementor-element.elementor-element-2dbcd0b{left:69.4px;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b{bottom:40px;}@media(max-width:1024px){.elementor-1381 .elementor-element.elementor-element-1bd8f8f{--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-1381 .elementor-element.elementor-element-1531907{--min-height:250px;}}@media(min-width:768px){.elementor-1381 .elementor-element.elementor-element-1bd8f8f{--width:200px;}}@media(max-width:1024px) and (min-width:768px){.elementor-1381 .elementor-element.elementor-element-1bd8f8f{--width:38%;}}@media(max-width:767px){.elementor-1381 .elementor-element.elementor-element-1bd8f8f{--width:150px;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;}.elementor-1381 .elementor-element.elementor-element-1531907{--min-height:250px;}.elementor-1381 .elementor-element.elementor-element-1ce2241 .elementor-heading-title{font-size:12px;}.elementor-1381 .elementor-element.elementor-element-1ce2241 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-1381 .elementor-element.elementor-element-46a1aa7 .elementor-heading-title{font-size:9px;}.elementor-1381 .elementor-element.elementor-element-46a1aa7 > .elementor-widget-container{margin:0px 0px -6px 0px;padding:0px 0px 0px 0px;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b .elementor-icon{font-size:30px;border-radius:50% 50% 50% 50%;}.elementor-1381 .elementor-element.elementor-element-2dbcd0b .elementor-icon svg{height:30px;}}/* Start custom CSS for icon, class: .elementor-element-2dbcd0b */.elementor-1381 .elementor-element.elementor-element-2dbcd0b {
     border: 2px solid #fff;
     border-radius: 50%;
     width: 60px;
     height: 60px;
+}/* End custom CSS */
+/* Start custom CSS for container, class: .elementor-element-1531907 */.elementor-1381 .elementor-element.elementor-element-1531907 {
+    margin: 0 auto;
+}/* End custom CSS */
+/* Start custom CSS for container, class: .elementor-element-1bd8f8f */.elementor-1381 .elementor-element.elementor-element-1bd8f8f {
+    margin: 0 auto;
 }/* End custom CSS */</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1378 post-1378 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/neurotoxin/">Neurotoxin</a></h1>		</div>
@@ -1258,11 +1340,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/neurotoxin/">
@@ -1270,16 +1348,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1379 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1379 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/Mask-Group-34.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1379 post-1379 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/fillers/">Fillers</a></h1>		</div>
@@ -1288,11 +1362,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/fillers/">
@@ -1300,16 +1370,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1380 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1380 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-belleza-joven-sensual-piel-sana.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1380 post-1380 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/juvederm/">Juvederm</a></h1>		</div>
@@ -1318,11 +1384,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/juvederm/">
@@ -1330,16 +1392,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1662 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1662 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1662 post-1662 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/neurotoxin-2/">Neurotoxin 2</a></h1>		</div>
@@ -1348,11 +1406,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/neurotoxin-2/">
@@ -1360,16 +1414,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1663 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1663 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1663 post-1663 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/neurotoxin-3/">Neurotoxin 3</a></h1>		</div>
@@ -1378,11 +1428,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/neurotoxin-3/">
@@ -1390,16 +1436,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1664 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1664 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1664 post-1664 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/neurotoxin-4/">Neurotoxin 4</a></h1>		</div>
@@ -1408,11 +1450,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/neurotoxin-4/">
@@ -1420,16 +1458,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1665 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1665 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1665 post-1665 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/neurotoxin-5/">Neurotoxin 5</a></h1>		</div>
@@ -1438,11 +1472,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/neurotoxin-5/">
@@ -1450,16 +1480,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1666 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1666 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-belleza-joven-sensual-piel-sana.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1666 post-1666 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/neurotoxin-6/">Neurotoxin 6</a></h1>		</div>
@@ -1468,19 +1494,13 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/neurotoxin-6/">
 			<svg xmlns="http://www.w3.org/2000/svg" width="29.421" height="29.421" viewbox="0 0 29.421 29.421"><path id="mas" d="M28.2,13.485H15.937V1.226A1.226,1.226,0,0,0,14.711,0h0a1.226,1.226,0,0,0-1.226,1.226V13.485H1.226A1.226,1.226,0,0,0,0,14.711H0a1.226,1.226,0,0,0,1.226,1.226H13.485V28.2a1.226,1.226,0,0,0,1.226,1.226h0A1.226,1.226,0,0,0,15.937,28.2V15.937H28.2a1.226,1.226,0,0,0,1.226-1.226h0A1.226,1.226,0,0,0,28.2,13.485Z" fill="#fff"></path></svg>			</a>
 		</div>
 				</div>
-				</div>
-					</div>
 				</div>
 				</div>
 				</div>
@@ -1505,8 +1525,6 @@ ments</h2>		</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1666 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1666 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-belleza-joven-sensual-piel-sana.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1666 post-1666 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/neurotoxin-6/">Neurotoxin 6</a></h1>		</div>
@@ -1515,11 +1533,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/neurotoxin-6/">
@@ -1527,16 +1541,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1665 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1665 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1665 post-1665 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/neurotoxin-5/">Neurotoxin 5</a></h1>		</div>
@@ -1545,11 +1555,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/neurotoxin-5/">
@@ -1557,16 +1563,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1664 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1664 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1664 post-1664 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/neurotoxin-4/">Neurotoxin 4</a></h1>		</div>
@@ -1575,11 +1577,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/neurotoxin-4/">
@@ -1587,16 +1585,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1663 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1663 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1663 post-1663 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/neurotoxin-3/">Neurotoxin 3</a></h1>		</div>
@@ -1605,11 +1599,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/neurotoxin-3/">
@@ -1617,16 +1607,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1662 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1662 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-mujer-piel-limpia-perfecta.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1662 post-1662 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/neurotoxin-2/">Neurotoxin 2</a></h1>		</div>
@@ -1635,11 +1621,7 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/neurotoxin-2/">
@@ -1647,16 +1629,12 @@ ments</h2>		</div>
 		</div>
 				</div>
 				</div>
-					</div>
-				</div>
 				</div>
 				</div>
 						</div>
 		<style id="loop-dynamic-1381">.e-loop-item-1380 .elementor-element.elementor-element-1531907:not(.elementor-motion-effects-element-type-background), .e-loop-item-1380 .elementor-element.elementor-element-1531907 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("https://masterfacemedspa.com/wp-content/uploads/2023/06/retrato-belleza-joven-sensual-piel-sana.png");}</style>		<div data-elementor-type="loop-item" data-elementor-id="1381" class="elementor elementor-1381 swiper-slide e-loop-item e-loop-item-1380 post-1380 treatment type-treatment status-publish has-post-thumbnail hentry" data-elementor-post-type="elementor_library" role="group" aria-roledescription="slide" data-custom-edit-handle="1">
 						<div class="elementor-element elementor-element-1bd8f8f e-con-full e-flex e-con" data-id="1bd8f8f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 		<div class="elementor-element elementor-element-1531907 e-con-full treatments e-flex e-con" data-id="1531907" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-39c252e e-flex e-con-boxed e-con" data-id="39c252e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1ce2241 elementor-widget elementor-widget-theme-post-title elementor-page-title elementor-widget-heading" data-id="1ce2241" data-element_type="widget" data-widget_type="theme-post-title.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default"><a href="https://masterfacemedspa.com/treatment/juvederm/">Juvederm</a></h1>		</div>
@@ -1665,19 +1643,13 @@ ments</h2>		</div>
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">#MasterFace</h2>		</div>
 				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-0d25ba1 e-flex e-con-boxed e-con" data-id="0d25ba1" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-element elementor-element-2dbcd0b elementor-view-stacked elementor-absolute elementor-shape-circle elementor-widget elementor-widget-icon" data-id="2dbcd0b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://masterfacemedspa.com/treatment/juvederm/">
 			<svg xmlns="http://www.w3.org/2000/svg" width="29.421" height="29.421" viewbox="0 0 29.421 29.421"><path id="mas" d="M28.2,13.485H15.937V1.226A1.226,1.226,0,0,0,14.711,0h0a1.226,1.226,0,0,0-1.226,1.226V13.485H1.226A1.226,1.226,0,0,0,0,14.711H0a1.226,1.226,0,0,0,1.226,1.226H13.485V28.2a1.226,1.226,0,0,0,1.226,1.226h0A1.226,1.226,0,0,0,15.937,28.2V15.937H28.2a1.226,1.226,0,0,0,1.226-1.226h0A1.226,1.226,0,0,0,28.2,13.485Z" fill="#fff"></path></svg>			</a>
 		</div>
 				</div>
-				</div>
-					</div>
 				</div>
 				</div>
 				</div>
@@ -1894,7 +1866,7 @@ ments</h2>		</div>
 <link rel="stylesheet" id="elementor-post-1846-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-1846.css?ver=1690302886" media="all">
 <link rel="stylesheet" id="elementor-post-1849-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-1849.css?ver=1690302887" media="all">
 <link rel="stylesheet" id="elementor-post-1853-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-1853.css?ver=1690302888" media="all">
-<link rel="stylesheet" id="elementor-post-1381-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-1381.css?ver=1690302883" media="all">
+<link rel="stylesheet" id="elementor-post-1381-css" href="https://masterfacemedspa.com/wp-content/uploads/elementor/css/post-1381.css?ver=1690391024" media="all">
 <script src="https://masterfacemedspa.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
 <script src="https://masterfacemedspa.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.2" id="jquery-ui-mouse-js"></script>
 <script src="https://masterfacemedspa.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.13.2" id="jquery-ui-slider-js"></script>
@@ -1915,7 +1887,7 @@ ments</h2>		</div>
 <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 </script>
-<script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/masterfacemedspa.com\/wp-admin\/admin-ajax.php","nonce":"e45b648823","urls":{"assets":"https:\/\/masterfacemedspa.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/masterfacemedspa.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"es_ES","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/masterfacemedspa.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};</script>
+<script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/masterfacemedspa.com\/wp-admin\/admin-ajax.php","nonce":"7e8b808606","urls":{"assets":"https:\/\/masterfacemedspa.com\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/masterfacemedspa.com\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"es_ES","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/masterfacemedspa.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};</script>
 <script src="https://masterfacemedspa.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.14.1" id="elementor-pro-frontend-js"></script>
 <script src="https://masterfacemedspa.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
 <script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartir en Facebook","shareOnTwitter":"Compartir en Twitter","pinIt":"Pinear","download":"Descargar","downloadImage":"Descargar imagen","fullscreen":"Pantalla completa","zoom":"Zoom","share":"Compartir","playVideo":"Reproducir vídeo","previous":"Anterior","next":"Siguiente","close":"Cerrar","a11yCarouselWrapperAriaLabel":"Carrusel | Scroll horizontal: Flecha izquierda y derecha","a11yCarouselPrevSlideMessage":"Diapositiva anterior","a11yCarouselNextSlideMessage":"Diapositiva siguiente","a11yCarouselFirstSlideMessage":"Esta es la primera diapositiva","a11yCarouselLastSlideMessage":"Esta es la última diapositiva","a11yCarouselPaginationBulletMessage":"Ir a la diapositiva"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Móvil vertical","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Móvil horizontal","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tableta vertical","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tableta horizontal","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portátil","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Pantalla grande","value":2400,"default_value":2400,"direction":"min","is_enabled":true}}},"version":"3.14.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"container":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"editor_v2":true,"landing-pages":true,"page-transitions":true,"notes":true,"loop":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/masterfacemedspa.com\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper-container","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet","viewport_laptop","viewport_widescreen"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":1664,"title":"Neurotoxin%204%20%E2%80%93%20Master%20Face%20Med%20Spa","excerpt":"","featuredImage":"https:\/\/masterfacemedspa.com\/wp-content\/uploads\/2023\/06\/retrato-mujer-piel-limpia-perfecta-505x1024.png"}};</script>
@@ -1926,13 +1898,14 @@ wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 <script>
 //SLIDER PARA POST EN BLOG
 jQuery(document).ready(function( $ ){
-      jQuery(".post_slide .elementor-widget-container").addClass("swiper");
+      jQuery(".post_slide .elementor-widget-posts .elementor-widget-container").addClass("swiper");
+	jQuery(".post_slide .elementor-widget-posts .elementor-widget-container").addClass("swiper-post-mface");
   jQuery(".post_slide .elementor-posts-container").addClass("swiper-wrapper");
     jQuery(".post_slide .elementor-post").addClass("swiper-slide");
-	jQuery('.swiper').append('<footer class="footer-slider"><div class="swiper-pagination" slot="pagination"><\/div><\/footer>');
+	jQuery('.swiper-post-mface').append('<footer class="footer-slider"><div class="swiper-pagination" slot="pagination"><\/div><\/footer>');
 //jQuery('.swiper').after('<div class="swiper-button-prev"><\/div><div class="swiper-button-next"><\/div>'); 
   
-    var swiper = new Swiper('.swiper', {
+    var swiper = new Swiper('.swiper-post-mface', {
       	direction: "horizontal",
       	//slidesPerView: 3,
       	spaceBetween: 30,
