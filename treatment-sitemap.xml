@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://masterfacemedspa.com/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://masterfacemedspa.com/treatment/neurotoxin/</loc>
-		<lastmod>2023-08-16T14:30:26+00:00</lastmod>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Neurotoxin.png</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://masterfacemedspa.com/treatment/lips-fillers/</loc>
-		<lastmod>2023-08-16T14:40:13+00:00</lastmod>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Lips_filler.png</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://masterfacemedspa.com/treatment/facial-harmonization/</loc>
 		<lastmod>2023-08-16T20:44:34+00:00</lastmod>
 		<image:image>
@@ -50,38 +36,52 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://masterfacemedspa.com/treatment/morpheus-8/</loc>
-		<lastmod>2023-08-16T20:52:52+00:00</lastmod>
+		<loc>https://masterfacemedspa.com/treatment/neurotoxin/</loc>
+		<lastmod>2023-08-23T15:55:29+00:00</lastmod>
 		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/morpheus_8-2.png</image:loc>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Neurotoxin.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://masterfacemedspa.com/treatment/diolaze/</loc>
-		<lastmod>2023-08-16T20:53:37+00:00</lastmod>
+		<loc>https://masterfacemedspa.com/treatment/lumeca-ipl/</loc>
+		<lastmod>2023-08-23T16:25:54+00:00</lastmod>
 		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Diolaze.png</image:loc>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Lumeca.png</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://masterfacemedspa.com/treatment/pdo-treads-lyft/</loc>
-		<lastmod>2023-08-16T20:53:56+00:00</lastmod>
+		<lastmod>2023-08-23T16:26:08+00:00</lastmod>
 		<image:image>
 			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/PDO_treads.png</image:loc>
 		</image:image>
 	</url>
 	<url>
 		<loc>https://masterfacemedspa.com/treatment/kybella-fat-dissolving/</loc>
-		<lastmod>2023-08-16T20:54:32+00:00</lastmod>
+		<lastmod>2023-08-23T16:26:27+00:00</lastmod>
 		<image:image>
 			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Kybella_fat.png</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://masterfacemedspa.com/treatment/lumeca-ipl/</loc>
-		<lastmod>2023-08-16T20:55:18+00:00</lastmod>
+		<loc>https://masterfacemedspa.com/treatment/diolaze/</loc>
+		<lastmod>2023-08-23T16:38:14+00:00</lastmod>
 		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Lumeca.png</image:loc>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Diolaze.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://masterfacemedspa.com/treatment/morpheus-8/</loc>
+		<lastmod>2023-08-23T16:41:00+00:00</lastmod>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/morpheus_8-2.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://masterfacemedspa.com/treatment/lip-fillers/</loc>
+		<lastmod>2023-08-23T19:19:07+00:00</lastmod>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/06/Lips_filler.png</image:loc>
 		</image:image>
 	</url>
 </urlset>
