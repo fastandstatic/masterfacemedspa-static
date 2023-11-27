@@ -8,17 +8,17 @@
 		</image:image>
 	</url>
 	<url>
-		<loc>https://masterfacemedspa.com/team/dr-david-revilla/</loc>
-		<lastmod>2023-08-01T22:10:35+00:00</lastmod>
-		<image:image>
-			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/08/Dr_David_Revilla_team.webp</image:loc>
-		</image:image>
-	</url>
-	<url>
 		<loc>https://masterfacemedspa.com/team/julian-espinoza/</loc>
 		<lastmod>2023-08-01T22:10:46+00:00</lastmod>
 		<image:image>
 			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/08/Dr_David_Revilla_team_1.webp</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://masterfacemedspa.com/team/dr-david-revilla/</loc>
+		<lastmod>2023-11-27T13:36:09+00:00</lastmod>
+		<image:image>
+			<image:loc>https://masterfacemedspa.com/wp-content/uploads/2023/08/Dr_David_Revilla_team.webp</image:loc>
 		</image:image>
 	</url>
 </urlset>
